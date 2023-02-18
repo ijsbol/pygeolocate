@@ -30,11 +30,9 @@ from .structures import (
     Coordinates,
 )
 
-import countries_csv
+from .countries_csv import DATA as countries_csv_data
 
 def _get_raw_country_data() -> List[Dict]:
-    raw_csv_data = countries_csv.DATA
-
     return [
         {
             'code':  country_data.split(",")[0],
@@ -43,7 +41,7 @@ def _get_raw_country_data() -> List[Dict]:
                 'latitude': country_data.split(",")[1],
                 'longitude': country_data.split(",")[2],
             }
-        } for country_data in raw_csv_data.split("\n")
+        } for country_data in countries_csv_data.split("\n")
     ]
 
 def locate_by_name(country_name: str) -> List[Country]:
