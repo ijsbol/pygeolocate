@@ -30,10 +30,10 @@ from .structures import (
     Coordinates,
 )
 
+import countries_csv
 
 def _get_raw_country_data() -> List[Dict]:
-    with open("pylocate/csv-files/countries.csv", "r") as fp:
-        raw_csv_data = fp.read()
+    raw_csv_data = countries_csv.DATA
 
     return [
         {

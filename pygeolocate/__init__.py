@@ -18,11 +18,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from .pylocate import (
+from .pygeolocate import (
     locate_by_name,
     locate_by_code,
 )
 
 __author__ = "Scrumpyy"
 
-__version__ = "1.0.0"
+__version__ = "1.0.3"

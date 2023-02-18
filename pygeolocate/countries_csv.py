@@ -1,5 +1,26 @@
-code,latitude,longitude,name
-AD,42.546245,1.601554,Andorra
+"""
+MIT License
+Copyright (c) 2023-present Scrumpy (Isabelle)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+
+# Couldn't be bothered to figure out why open('countries.csv', 'r') wasn't working, so here we are.
+
+DATA = """AD,42.546245,1.601554,Andorra
 AE,23.424076,53.847818,United Arab Emirates
 AF,33.93911,67.709953,Afghanistan
 AG,17.060816,-61.796428,Antigua and Barbuda
@@ -243,4 +264,4 @@ YE,15.552727,48.516388,Yemen
 YT,-12.8275,45.166244,Mayotte
 ZA,-30.559482,22.937506,South Africa
 ZM,-13.133897,27.849332,Zambia
-ZW,-19.015438,29.154857,Zimbabwe
+ZW,-19.015438,29.154857,Zimbabwe"""

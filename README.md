@@ -1,12 +1,12 @@
-# pylocate
+# pygeolocate
  
 
 ## Get a country by its full name
 ```python
-# pylocate/examples/get_country_by_full_name.py
-import pylocate
+# pygeolocate/examples/get_country_by_full_name.py
+import pygeolocate
 
-united_kingdom = pylocate.locate_by_name("united kingdom")
+united_kingdom = pygeolocate.locate_by_name("united kingdom")
 
 print(country)
 print(country.name)
@@ -17,11 +17,11 @@ print(country.coordinates['long'])
 
 ## Get a country by part of its name
 ```python
-# pylocate/examples/get_country_by_partial_name.py
+# pygeolocate/examples/get_country_by_partial_name.py
 
-import pylocate
+import pygeolocate
 
-for country in pylocate.locate_by_name("united"):
+for country in pygeolocate.locate_by_name("united"):
     print(country)
     print(country.name)
     print(country.coordinates)
