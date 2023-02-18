@@ -23,6 +23,11 @@ from .pygeolocate import (
     locate_by_code,
 )
 
+__all__ = (
+    "locate_by_name",
+    "locate_by_code",
+)
+
 __author__ = "Scrumpyy"
 
 __version__ = "1.0.8"

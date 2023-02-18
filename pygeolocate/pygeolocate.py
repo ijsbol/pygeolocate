@@ -19,8 +19,8 @@ SOFTWARE.
 """
 
 from typing import (
-    Union,
-    Tuple,
+    Any,
+    Optional,
     List,
     Dict,
 )
@@ -32,7 +32,7 @@ from .structures import (
 
 from .countries_csv import DATA as countries_csv_data
 
-def _get_raw_country_data() -> List[Dict]:
+def _get_raw_country_data() -> List[Dict[str, Any]]:
     return [
         {
             'code':  country_data.split(",")[0],
@@ -40,7 +40,7 @@ def _get_raw_country_data() -> List[Dict]:
             'coordinates': {
                 'latitude': country_data.split(",")[1],
                 'longitude': country_data.split(",")[2],
-            }
+            },
         } for country_data in countries_csv_data.split("\n")
     ]
 
@@ -56,16 +56,16 @@ def locate_by_name(country_name: str) -> List[Country]:
 
     return [
         Country(
-            country['code'], 
-            country['name'], 
+            country['code'],
+            country['name'],
             Coordinates(
-                country['coordinates']['latitude'], 
-                country['coordinates']['longitude']
-            )
+                country['coordinates']['latitude'],
+                country['coordinates']['longitude'],
+            ),
         ) for country in countries if country_name.lower().replace(" ", "") in country['name'].lower().replace(" ", "") 
     ]
 
-def locate_by_code(country_code: str) -> Union[None, Country]:
+def locate_by_code(country_code: str) -> Optional[Country]:
     """
         Returns `None` if `country_code` is invalid, else it returns a `Country` object.
     """
@@ -75,12 +75,12 @@ def locate_by_code(country_code: str) -> Union[None, Country]:
     for country in countries:
         if country['code'].lower() == country_code.lower():
             return Country(
-                country['code'], 
-                country['name'], 
+                country['code'],
+                country['name'],
                 Coordinates(
-                    country['coordinates']['latitude'], 
-                    country['coordinates']['longitude']
-                )
+                    country['coordinates']['latitude'],
+                    country['coordinates']['longitude'],
+                ),
             )
 
     return None
