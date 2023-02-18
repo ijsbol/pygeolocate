@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pygeolocate"
+version = "1.0.5"
+description = "An easy way to find a countries coordinates by name"
+authors = ["Scrumpyy <scrumpy@weeb.email>"]
+license = "MIT"
+readme = "README.md"
+
+[project.urls]
+"Homepage" = "https://github.com/Scrumpyy/pygeolocate"
+"Bug Tracker" = "https://github.com/Scrumpyy/pygeolocate/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | venv
+  | mongo-data
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
