@@ -1,5 +1,6 @@
 # pygeolocate
  
+`pip install pygeolocate`
 
 ## Get a country by its full name
 ```python
