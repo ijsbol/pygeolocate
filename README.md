@@ -6,6 +6,7 @@
   <img align="center" src="https://img.shields.io/pypi/dm/pygeolocate?style=for-the-badge"/>
   <img align="center" src="https://img.shields.io/github/license/scrumpyy/pygeolocate?style=for-the-badge"/>
   <img align="center" src="https://img.shields.io/github/issues/scrumpyy/pygeolocate?style=for-the-badge"/>
+  <br>
   <img align="center" src="https://img.shields.io/github/stars/scrumpyy/pygeolocate?style=for-the-badge"/>
   <img align="center" src="https://img.shields.io/pypi/v/pygeolocate?style=for-the-badge"/>
   <img align="center" src="https://img.shields.io/pypi/pyversions/pygeolocate?style=for-the-badge"/>
