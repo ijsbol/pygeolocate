@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pygeolocate"
-version = "1.0.8"
+version = "1.0.10"
 description = "An easy way to find a countries coordinates by name"
 authors = ["Scrumpyy <scrumpy@weeb.email>"]
 license = "MIT"

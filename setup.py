@@ -4,7 +4,7 @@ import os
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION = '1.0.8'
+VERSION = '1.0.10'
 DESCRIPTION = 'An easy way to find a countries coordinates by name'
 
 try:

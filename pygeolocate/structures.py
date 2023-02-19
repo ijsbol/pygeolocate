@@ -19,39 +19,48 @@ SOFTWARE.
 """
 
 from typing import (
-    List,
     Tuple,
     Union,
+    overload,
 )
 
 class Coordinates:
     def __init__(self, latitude: float, longitude: float) -> None:
         self._latitude = latitude
         self._longitude = longitude
-    
+
     @property
     def latitude(self) -> float:
         return self._latitude
-    
+
     @property
     def longitude(self) -> float:
         return self._longitude
 
+    @overload
+    def __getitem__(self, item: int) -> float: ...
+
+    @overload
+    def __getitem__(self, item: str) -> float: ...
+
     def __getitem__(self, item: Union[int, str]) -> float:
-        if type(item) == int:
+        if not isinstance(item, (int, str)):  # type: ignore
+            raise TypeError("Index must be either an int or a str.")
+
+        if isinstance(item, int):
             if item == 0:
                 return self._latitude
             elif item == 1:
                 return self._longitude
             else:
                 raise IndexError("Index out of range, needs to be either 0 or 1.")
-        elif type(item) == str:
-            if item.lower() in ["lat", "latitude"]:
-                return self._latitude
-            elif item.lower() in ["long", "longitude"]:
-                return self._longitude
-            else:
-                raise ValueError("Item not found.")
+
+        if item.lower() in ["lat", "latitude"]:
+            return self._latitude
+        elif item.lower() in ["long", "longitude"]:
+            return self._longitude
+        else:
+            raise ValueError("Item not found.")
 
     def __tuple__(self) -> Tuple[float, float]:
         return (self._latitude, self._longitude)
@@ -64,11 +73,11 @@ class Country:
         self._country_code = country_code
         self._country_name = country_name
         self._coordinates = coordinates
-    
+
     @property
     def coordinates(self) -> Coordinates:
         return self._coordinates
-    
+
     @property
     def name(self) -> str:
         return self._country_name
