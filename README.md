@@ -7,7 +7,7 @@
 # pygeolocate/examples/get_country_by_full_name.py
 import pygeolocate
 
-united_kingdom = pygeolocate.locate_by_name("united kingdom")
+united_kingdom = pygeolocate.locate_by_name("united kingdom")[0]
 
 print(country)
 print(country.name)
