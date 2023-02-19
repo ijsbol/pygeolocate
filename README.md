@@ -1,6 +1,20 @@
 # pygeolocate
  
-`pip install pygeolocate`
+`pip install -U pygeolocate` or `python -m pip install -U pygeolocate`
+
+<p>
+  <img align="center" src="https://img.shields.io/pypi/dm/pygeolocate?style=for-the-badge"/>
+  <img align="center" src="https://img.shields.io/github/license/scrumpyy/pygeolocate?style=for-the-badge"/>
+  <img align="center" src="https://img.shields.io/github/issues/scrumpyy/pygeolocate?style=for-the-badge"/>
+  <img align="center" src="https://img.shields.io/github/stars/scrumpyy/pygeolocate?style=for-the-badge"/>
+  <img align="center" src="https://img.shields.io/pypi/v/pygeolocate?style=for-the-badge"/>
+  <img align="center" src="https://img.shields.io/pypi/pyversions/pygeolocate?style=for-the-badge"/>
+</p>
+
+## What is pygeolocate?
+Pygeolocate is a simple Python module that allows for developers to get the longitude and latitude coordinates of the geographical center of a country based on Googles dataset.
+
+Pygeolocate also allows for developers to serach countries based on their country code (and vice versa) as well as search for partial country names.
 
 ## Get a country by its full name
 ```python
