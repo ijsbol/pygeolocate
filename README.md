@@ -15,7 +15,7 @@
 ## What is pygeolocate?
 Pygeolocate is a simple Python module that allows for developers to get the longitude and latitude coordinates of the geographical center of a country based on Googles dataset.
 
-Pygeolocate also allows for developers to serach countries based on their country code (and vice versa) as well as search for partial country names.
+Pygeolocate also allows for developers to search for countries based on their country code (and vice versa) as well as search for partial country names.
 
 ## Get a country by its full name
 ```python
