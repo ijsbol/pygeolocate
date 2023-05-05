@@ -6,6 +6,10 @@
 |--|--|
 | <img align="center" src="https://i.imgur.com/g3Euo2M.png" height="128" width="128"/> | <img align="center" src="https://img.shields.io/pypi/dm/pygeolocate?style=for-the-badge"/><img align="center" src="https://img.shields.io/github/license/scrumpyy/pygeolocate?style=for-the-badge"/><img align="center" src="https://img.shields.io/github/issues/scrumpyy/pygeolocate?style=for-the-badge"/><br><img align="center" src="https://img.shields.io/github/stars/scrumpyy/pygeolocate?style=for-the-badge"/><img align="center" src="https://img.shields.io/pypi/v/pygeolocate?style=for-the-badge"/><img align="center" src="https://img.shields.io/pypi/pyversions/pygeolocate?style=for-the-badge"/> |
 
+Support server: <a href="https://discord.gg/v9Y8Yq2k5D" target="_blank">
+  <img draggable="false" style="width:119xp;height:20xp;" src="https://discord.com/api/guilds/1103834986194415637/embed.png">
+</a>
+
 ## What is pygeolocate?
 Pygeolocate is a simple Python module that allows for developers to get the longitude and latitude coordinates of the geographical center of a country based on Googles dataset.
 
