@@ -1,14 +1,15 @@
+from io import open
+from os import path
 from setuptools import setup, find_packages
-import io
-import os
+from typing import Final
 
-here = os.path.abspath(os.path.dirname(__file__))
+VERSION: Final[str] = '1.0.10'
+DESCRIPTION: Final[str] = 'An easy way to find a countries coordinates by name'
 
-VERSION = '1.0.10'
-DESCRIPTION = 'An easy way to find a countries coordinates by name'
+here = path.abspath(os.path.dirname(__file__))
 
 try:
-    with io.open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
+    with open(path.join(here, 'README.md'), encoding='utf-8') as f:
         LONG_DESCRIPTION = '\n' + f.read()
 except FileNotFoundError:
     LONG_DESCRIPTION = DESCRIPTION
@@ -21,7 +22,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Scrumpyy/pygeolocate",
     project_urls={
-        "Bug Tracker": "https://github.com/Scrumpyy/pygeolocate/issues"
+        "Bug Tracker": "https://github.com/Scrumpyy/pygeolocate/issues",
     },
     author="Isabelle",
     author_email="scrumpy@weeb.email",
@@ -34,5 +35,5 @@ setup(
         "Intended Audience :: Developers",
         'License :: OSI Approved :: MIT License',
         "Programming Language :: Python :: 3",
-    ]
+    ],
 )
