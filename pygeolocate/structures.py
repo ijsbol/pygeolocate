@@ -18,11 +18,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from typing import (
-    Tuple,
-    Union,
-    overload,
-)
+from typing import Tuple, Union, overload
 
 class Coordinates:
     def __init__(self, latitude: float, longitude: float) -> None:
