@@ -28,6 +28,6 @@ __all__ = (
     "locate_by_code",
 )
 
-__author__ = "Scrumpyy"
+__author__ = "Isabe1le"
 
 __version__ = "1.0.10"
